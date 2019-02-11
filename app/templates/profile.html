@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+
+{% block main%}
+<div id="card_top">
+        <div class="t_contain">
+            <image id="prof_img" src = {{ userdata["profile_url"] }} id = 'profile_pic'/>
+        </div>
+        <div class="t_contain">
+            <span id="fullname">{{ userdata["name"] }}</span>
+        </div>
+        <div class="t_contain">
+            <span id="username">@{{ userdata['username'] }}</span>
+        </div>
+        <div class="t_contain">
+            <span id="location">{{ userdata['locate']}}</span>
+        </div>
+        <div class="t_contain">
+            <span id="join_date">{{ userdata['joindate']}}</span>
+        </div>
+    </div>
+    <div id="card_bottom">
+        <div class='b_contain'>
+            <span id="sh_bio">{{ userdata['bio']}}</span>
+        </div>
+        <div class="b_contain">
+            <div class='row'>
+                <div class="col">
+                    <span id="noposts">{{ userdata['noposts']}}</span>
+                    <label class='lower_label' for="noposts">Posts</label>                    
+                </div>
+                <div class="col">
+                    <span id="nofollowing">{{ userdata['nofollowing']}}</span>
+                    <label class='lower_label' for="nofollowing">Following</label>
+                </div>
+                <div class="col">
+                    <span id="nofollowers">{{ userdata['nofollowers']}}</span>
+                    <label class='lower_label' for="nofollowers">Follower</label>
+                </div>
+            </div>
+        </div>
+        <div class='b_contain'>
+            <label id='follow_btn' >Follow</label>
+        </div>
+    </div>
+{% endblock %}

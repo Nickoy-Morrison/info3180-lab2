@@ -1,3 +1,74 @@
 body {
     padding-top: 5rem;
 }
+
+.lower_label, #sh_bio{
+    color: gray;
+}
+
+.t_contain{
+    color: WhiteSmoke ;
+}
+
+.t_contain, .b_contain{
+    margin: 5px 30px;
+    text-align: center;
+}
+
+.b_contain .row .col{
+    width: 33.33333%;
+}
+
+.b_contain span{
+    display: block;
+}
+#fullname{
+    font-size: 30px;
+    text-shadow: 0px 3px 3px grey;
+}
+
+#prof_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: -2px 2px 10px slategrey;
+}
+
+#card_top, #card_bottom{
+    padding: 15px 30px;
+    border: gray solid;
+}
+
+#card_top{
+    background: linear-gradient(to top left, Cyan  0%, Blue  100%);
+    background: linear-gradient(to top right, Cyan  0%, Blue  100%);
+    background: linear-gradient(to bottom right, Blue  0%, Aqua  100%);
+    background: linear-gradient(to bottom left, LawnGreen   0%, Aqua  100%);
+    margin: 10% 30% 0% 30%;
+    border-radius: 20px 20px 0px 0px;
+    border-width: 1px 1px 0.05px 1px;
+}
+
+#card_bottom{
+    border-width: 0.05px 1px 1px 1px;
+    margin: 0% 30% 10% 30%;
+    border-radius: 0px 0px 20px 20px;
+    background: Lavender  ;
+}
+
+
+
+#follow_btn{
+    width: 55%;
+    text-align: center;
+    background: MediumSpringGreen ;
+    border-radius: 10px;
+    height: 35px;
+    color: MediumBlue s;
+    font-size: 20px;
+    box-shadow: -2px 2px 10px grey;
+}
+
+#follow_btn:active{
+    box-shadow: 0px 0px 0px blue;
+}
